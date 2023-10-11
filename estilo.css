@@ -1,0 +1,183 @@
+/* Generalidades */
+body {
+    background-color: #bc8f8f;
+    margin: 1px;
+    padding: 0;
+}
+
+main {
+    margin: 10px;
+}
+
+main h3 {
+    font-size: 2rem;
+    color: #561D25;
+}
+
+/* Header */
+header {
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    border-bottom: 1px solid white;
+    margin: 0;
+    display: inline-flex;
+    padding: 0;
+    display: flex;
+}
+
+header h1 {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Satisfy', cursive;
+    font-weight: 100;
+    margin: 1px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header svg {
+    text-align: end;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Titulo de filtrado */
+.tituloFiltrado {
+    font-size: 2rem;
+    color: #561D25;
+}
+
+/* Cartas con juegos */
+.juegos {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tituloCarta {
+    font-family: 'Pixelify Sans', cursive;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: beige;
+    text-transform: uppercase;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 20rem;
+    text-align: justify;
+    background-color: #5FB49C;
+    border: 2px dotted #3F826D;
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.botonCarta {
+    margin-bottom: 10px;
+    font-family: "Pixelify Sans";
+    font-size: 1rem;
+    color: #561D25;
+    border: #561D25 solid 1px;
+    background-color: #bc8f8f;
+}
+
+.botonCarta:hover {
+    font-size: 1.2rem;
+    color: #561D25;
+    background-color: #c6a6a6;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Boton que dirige a otra pág */
+.centrar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.filtro {
+    background-color: #3F826D;
+    border: #3F826D 1px solid;
+}
+
+.filtro a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.filtro:hover {
+    background-color: white;
+    color: #3F826D;
+}
+
+.filtro a:hover {
+    color: #3F826D;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    width: 100%;
+    margin-top: 5px;
+    bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: rosybrown;
+    padding-bottom: 3px;
+    padding-top: 1px;
+}
+
+/* Página de filtrado */
+.elementoFiltrado {
+    display: inline-block;
+    margin: 15px;
+}
+
+.elementoFiltrado h4 {
+    font-size: 1.2rem;
+}
+
+.tarjetaFiltrada {
+    border: #561D25 2px solid;
+    background-color: #5FB49C;
+    height: 10rem;
+    width: 10rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.filtradoEdad {
+    display: inline-flex;
+}
+
+.linea {
+    text-decoration: underline;
+}
+
+.letra {
+    font-family: 'Pixelify Sans', cursive;
+    color: white;
+}
