@@ -85,7 +85,7 @@ function agregarBoton() {
     // Guardar los elementos del carrito en el Local Storage
     localStorage.setItem("Carrito", nombres(carrito))
 
-    // Mostrar los elementos del carrito:                                           Acomodar los ineerHTML
+    // Mostrar los elementos del carrito:                                           
     function nombres(array) {
         let total = 0
         for (let i = 0; i < array.length; i++) {
@@ -93,21 +93,31 @@ function agregarBoton() {
         }
         return total;
     }
-    let nombresTotales = nombres(carrito)
+
+    let itemsCarrito = carrito.map((p) => {
+        return `<li>${p.nombre}</li>`
+    })
 
     // Sumar el precio total del carrito:
     function sumarPrecios(array) {
         let total = 0;
         for (let i = 0; i < array.length; i++) {
-            total += array[i].precio;
+            total += array[i].precio
         }
-        return total;
+        return total
     }
 
     const precioTotal = sumarPrecios(carrito);
 
-    elementoCarrito = document.querySelector("aside").textContent = `Usted tiene en el carrito ${carrito.length} ítem/ítems, los mismos son: ${nombresTotales} y el precio total es de $${precioTotal}`
+    elementoCarrito = document.querySelector("aside")
+    let textoCarrito = document.createElement("div")
+    textoCarrito.innerHTML =
+        `<p>${parsenName} usted tiene en el carrito ${carrito.length} ítem/ítems, los mismos son:</p>
+        <ul> ${itemsCarrito.join(' ')}</ul>
+        <p>El precio total es de $${precioTotal}</p>`
+    elementoCarrito.appendChild(textoCarrito);
 }
+
 
 // PARA FILTRAR LOS JUEGOS POR EDADES                          
 let opcion1 = document.getElementById("#opcion1")
@@ -201,3 +211,17 @@ contenedorC.addEventListener("click", () => {
         <p><span class="linea">Precio:</span> $5000</p></div></div>`
     document.body.appendChild(tercerTexto)
 })
+
+// Formulario
+let listaUsuarios = ["Coder"]
+let nombreUsuario = document.querySelector("#name").value
+// listaUsuarios.push(nombreUsuario)
+let listaStr = JSON.stringify(listaUsuarios)
+localStorage.setItem("Nombres de los usuarios", listaStr)
+let aggInfoUser = document.getElementById("botonForm")
+// aggInfoUser.addEventListener("click", () => {
+//     listaUsuarios.push(nombreUsuario)
+// })
+
+let nombreUser = localStorage.getItem("Nombres de los usuarios")
+let parsenName= JSON.parse(nombreUser)
