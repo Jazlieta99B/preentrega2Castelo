@@ -22,7 +22,7 @@ let juegos = [
     { nombre: "Ajedrez", clasificación: "8", precio: 10000, jugadoresMin: "2", jugadoresMax: "2" }
 ]
 
-// Pusheo los elementos al carrito al hacer click en el boton
+// Pusheo o quito los elementos al carrito al hacer click en el boton
 let boton1 = document.getElementById("monopoly")
 boton1.addEventListener("click", agregarM)
 function agregarM() {
@@ -30,6 +30,32 @@ function agregarM() {
     // Mostrar cantidad de elementos en carritos en el botón del carrito
     let conteo = carrito.length
     botonConteo = document.querySelector("button").textContent = `${conteo}`
+    Toastify({
+        text: "Usted agregó el juego Monopoly al carrito",
+        className: "info",
+        style: {
+            background: "#3F826D",
+        }
+    }).showToast();
+}
+
+let boton11 = document.getElementById("monopolyQuitar")
+boton11.addEventListener("click", quitarM)
+function quitarM() {
+    const indice = carrito.indexOf(producto1);
+    if (indice !== -1) {
+        carrito.splice(indice, 1);
+        // Mostrar cantidad de elementos en carritos en el botón del carrito
+        let conteo = carrito.length
+        botonConteo = document.querySelector("button").textContent = `${conteo}`
+        Toastify({
+            text: "Usted eliminó el juego Monopoly del carrito",
+            className: "info",
+            style: {
+                background: "#3F826D",
+            }
+        }).showToast();
+    }
 }
 
 let boton2 = document.getElementById("4EnLinea")
@@ -39,6 +65,31 @@ function agregar4() {
     // Mostrar cantidad de elementos en carritos en el botón del carrito
     let conteo = carrito.length
     botonConteo = document.querySelector("button").textContent = `${conteo}`
+    Toastify({
+        text: "Usted agregó el juego 4 en linea al carrito",
+        className: "info",
+        style: {
+            background: "#3F826D",
+        }
+    }).showToast();
+}
+let boton12 = document.getElementById("4EnLineaQuitar")
+boton12.addEventListener("click", quitar4)
+function quitar4() {
+    const indice = carrito.indexOf(producto2);
+    if (indice !== -1) {
+        carrito.splice(indice, 1);
+        // Mostrar cantidad de elementos en carritos en el botón del carrito
+        let conteo = carrito.length
+        botonConteo = document.querySelector("button").textContent = `${conteo}`
+        Toastify({
+            text: "Usted eliminó el juego 4 en linea del carrito",
+            className: "info",
+            style: {
+                background: "#3F826D",
+            }
+        }).showToast();
+    }
 }
 
 let boton3 = document.getElementById("keSos")
@@ -48,6 +99,31 @@ function agregarK() {
     // Mostrar cantidad de elementos en carritos en el botón del carrito
     let conteo = carrito.length
     botonConteo = document.querySelector("button").textContent = `${conteo}`
+    Toastify({
+        text: "Usted agregó el juego ¿Ke sos? al carrito",
+        className: "info",
+        style: {
+            background: "#3F826D",
+        }
+    }).showToast();
+}
+let boton13 = document.getElementById("keSosQuitar")
+boton13.addEventListener("click", quitarK)
+function quitarK() {
+    const indice = carrito.indexOf(producto3);
+    if (indice !== -1) {
+        carrito.splice(indice, 1);
+        // Mostrar cantidad de elementos en carritos en el botón del carrito
+        let conteo = carrito.length
+        botonConteo = document.querySelector("button").textContent = `${conteo}`
+        Toastify({
+            text: "Usted eliminó el juego ¿Ke sos? del carrito",
+            className: "info",
+            style: {
+                background: "#3F826D",
+            }
+        }).showToast();
+    }
 }
 
 let boton4 = document.getElementById("sayMyName")
@@ -57,6 +133,31 @@ function agregarS() {
     // Mostrar cantidad de elementos en carritos en el botón del carrito
     let conteo = carrito.length
     botonConteo = document.querySelector("button").textContent = `${conteo}`
+    Toastify({
+        text: "Usted agregó el juego Say My Name al carrito",
+        className: "info",
+        style: {
+            background: "#3F826D",
+        }
+    }).showToast();
+}
+let boton14 = document.getElementById("sayMyNameQuitar")
+boton14.addEventListener("click", quitarS)
+function quitarS() {
+    const indice = carrito.indexOf(producto4);
+    if (indice !== -1) {
+        carrito.splice(indice, 1);
+        // Mostrar cantidad de elementos en carritos en el botón del carrito
+        let conteo = carrito.length
+        botonConteo = document.querySelector("button").textContent = `${conteo}`
+        Toastify({
+            text: "Usted eliminó el juego Say My Name del carrito",
+            className: "info",
+            style: {
+                background: "#3F826D",
+            }
+        }).showToast();
+    }
 }
 
 let boton5 = document.getElementById("uno")
@@ -66,6 +167,31 @@ function agregarU() {
     // Mostrar cantidad de elementos en carritos en el botón del carrito
     let conteo = carrito.length
     botonConteo = document.querySelector("button").textContent = `${conteo}`
+    Toastify({
+        text: "Usted agregó el juego Uno al carrito",
+        className: "info",
+        style: {
+            background: "#3F826D",
+        }
+    }).showToast();
+}
+let boton15 = document.getElementById("unoQuitar")
+boton15.addEventListener("click", quitarU)
+function quitarU() {
+    const indice = carrito.indexOf(producto5);
+    if (indice !== -1) {
+        carrito.splice(indice, 1);
+        // Mostrar cantidad de elementos en carritos en el botón del carrito
+        let conteo = carrito.length
+        botonConteo = document.querySelector("button").textContent = `${conteo}`
+        Toastify({
+            text: "Usted eliminó el juego Uno del carrito",
+            className: "info",
+            style: {
+                background: "#3F826D",
+            }
+        }).showToast();
+    }
 }
 
 let boton6 = document.getElementById("ajedrez")
@@ -75,6 +201,31 @@ function agregarA() {
     // Mostrar cantidad de elementos en carritos en el botón del carrito
     let conteo = carrito.length
     botonConteo = document.querySelector("button").textContent = `${conteo}`
+    Toastify({
+        text: "Usted agregó el juego Ajedrez al carrito",
+        className: "info",
+        style: {
+            background: "#3F826D",
+        }
+    }).showToast();
+}
+let boton16 = document.getElementById("ajedrezQuitar")
+boton16.addEventListener("click", quitarA)
+function quitarA() {
+    const indice = carrito.indexOf(producto6);
+    if (indice !== -1) {
+        carrito.splice(indice, 1);
+        // Mostrar cantidad de elementos en carritos en el botón del carrito
+        let conteo = carrito.length
+        botonConteo = document.querySelector("button").textContent = `${conteo}`
+        Toastify({
+            text: "Usted eliminó el juego Ajedrez del carrito",
+            className: "info",
+            style: {
+                background: "#3F826D",
+            }
+        }).showToast();
+    }
 }
 
 // Al hacer click en el carrito desplegar información sobre la compra
@@ -82,17 +233,7 @@ let botonCarrito = document.getElementById("botonCarrito")
 botonCarrito.addEventListener("click", agregarBoton)
 function agregarBoton() {
 
-    // Guardar los elementos del carrito en el Local Storage
-    localStorage.setItem("Carrito", nombres(carrito))
-
     // Mostrar los elementos del carrito:                                           
-    function nombres(array) {
-        let total = 0
-        for (let i = 0; i < array.length; i++) {
-            total += array[i].nombre;
-        }
-        return total;
-    }
 
     let itemsCarrito = carrito.map((p) => {
         return `<li>${p.nombre}</li>`
@@ -111,11 +252,19 @@ function agregarBoton() {
 
     elementoCarrito = document.querySelector("aside")
     let textoCarrito = document.createElement("div")
+    elementoCarrito.innerHTML = "";
     textoCarrito.innerHTML =
-        `<p>${parsenName} usted tiene en el carrito ${carrito.length} ítem/ítems, los mismos son:</p>
+        `<p>${nombreInput.value} usted tiene en el carrito ${carrito.length} ítem/ítems, los mismos son:</p>
         <ul> ${itemsCarrito.join(' ')}</ul>
         <p>El precio total es de $${precioTotal}</p>`
     elementoCarrito.appendChild(textoCarrito);
+
+
+    // Guardar los elementos del carrito en el Local Storage
+    let storageCarrito = carrito.map((p) => {
+        return ` ${p.nombre}`
+    })
+    localStorage.setItem("Carrito", storageCarrito)
 }
 
 
@@ -213,15 +362,38 @@ contenedorC.addEventListener("click", () => {
 })
 
 // Formulario
-let listaUsuarios = ["Coder"]
-let nombreUsuario = document.querySelector("#name").value
-// listaUsuarios.push(nombreUsuario)
-let listaStr = JSON.stringify(listaUsuarios)
-localStorage.setItem("Nombres de los usuarios", listaStr)
-let aggInfoUser = document.getElementById("botonForm")
-// aggInfoUser.addEventListener("click", () => {
-//     listaUsuarios.push(nombreUsuario)
-// })
+let listaUsuarios = []
+let nombreUsuarios = []
+let emailUsuarios = []
 
-let nombreUser = localStorage.getItem("Nombres de los usuarios")
-let parsenName= JSON.parse(nombreUser)
+let nombreInput = document.getElementById("name")
+nombreInput.addEventListener("blur", () => {
+    nombreUsuarios.push(nombreInput.value)
+})
+let emailInput = document.getElementById("email")
+emailInput.addEventListener("blur", () => {
+    emailUsuarios.push(emailInput.value)
+})
+let botonInput = document.getElementById("botonForm")
+botonInput.addEventListener("click", () => {
+    if (nombreUsuarios != "" && emailUsuarios != "") {
+        function usuario(nombre, mail) {
+            this.nombre = nombre
+            this.mail = mail
+        }
+        let usuario1 = new usuario(nombreInput.value, emailInput.value)
+        listaUsuarios.push(usuario1)
+        Toastify({
+            text: "¡Registrad@ con éxito!",
+            className: "info",
+            style: {
+                background: "linear-gradient(to right, #00b09b, #8a2be2)",
+            }
+        }).showToast();
+    }
+        // Guardar los datos de usuario en el Local Storage
+        let storageUsuarioNombre = listaUsuarios.map((p) => {
+            return `Nombre: ${p.nombre} - Email: ${p.mail}`
+        })
+        localStorage.setItem("Usuario", storageUsuarioNombre)
+})
