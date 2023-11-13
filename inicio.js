@@ -26,7 +26,7 @@ async function crearJ() {
                 style: {
                     background: "#3F826D",
                 },
-                gravity: "top", 
+                gravity: "top",
                 position: "right",
                 offset: {
                     y: 60,
@@ -49,7 +49,7 @@ async function crearJ() {
                     style: {
                         background: "#3F826D",
                     },
-                    gravity: "top", 
+                    gravity: "top",
                     position: "right",
                     offset: {
                         y: 60,
@@ -71,7 +71,7 @@ async function crearJ() {
                 style: {
                     background: "#3F826D",
                 },
-                gravity: "top", 
+                gravity: "top",
                 position: "right",
                 offset: {
                     y: 60,
@@ -93,7 +93,7 @@ async function crearJ() {
                     style: {
                         background: "#3F826D",
                     },
-                    gravity: "top", 
+                    gravity: "top",
                     position: "right",
                     offset: {
                         y: 60,
@@ -115,7 +115,7 @@ async function crearJ() {
                 style: {
                     background: "#3F826D",
                 },
-                gravity: "top", 
+                gravity: "top",
                 position: "right",
                 offset: {
                     y: 60,
@@ -137,7 +137,7 @@ async function crearJ() {
                     style: {
                         background: "#3F826D",
                     },
-                    gravity: "top", 
+                    gravity: "top",
                     position: "right",
                     offset: {
                         y: 60,
@@ -159,7 +159,7 @@ async function crearJ() {
                 style: {
                     background: "#3F826D",
                 },
-                gravity: "top", 
+                gravity: "top",
                 position: "right",
                 offset: {
                     y: 60,
@@ -181,11 +181,11 @@ async function crearJ() {
                     style: {
                         background: "#3F826D",
                     },
-            gravity: "top", 
-            position: "right",
-            offset: {
-                y: 60,
-            }
+                    gravity: "top",
+                    position: "right",
+                    offset: {
+                        y: 60,
+                    }
                 }).showToast();
             }
         }
@@ -203,11 +203,11 @@ async function crearJ() {
                 style: {
                     background: "#3F826D",
                 },
-            gravity: "top", 
-            position: "right",
-            offset: {
-                y: 60,
-            }
+                gravity: "top",
+                position: "right",
+                offset: {
+                    y: 60,
+                }
             }).showToast();
         }
         let boton15 = document.getElementById("unoQuitar")
@@ -225,11 +225,11 @@ async function crearJ() {
                     style: {
                         background: "#3F826D",
                     },
-            gravity: "top", 
-            position: "right",
-            offset: {
-                y: 60,
-            }
+                    gravity: "top",
+                    position: "right",
+                    offset: {
+                        y: 60,
+                    }
                 }).showToast();
             }
         }
@@ -247,11 +247,11 @@ async function crearJ() {
                 style: {
                     background: "#3F826D",
                 },
-            gravity: "top", 
-            position: "right",
-            offset: {
-                y: 60,
-            }
+                gravity: "top",
+                position: "right",
+                offset: {
+                    y: 60,
+                }
             }).showToast();
         }
         let boton16 = document.getElementById("ajedrezQuitar")
@@ -269,11 +269,11 @@ async function crearJ() {
                     style: {
                         background: "#3F826D",
                     },
-            gravity: "top", 
-            position: "right",
-            offset: {
-                y: 60,
-            }
+                    gravity: "top",
+                    position: "right",
+                    offset: {
+                        y: 60,
+                    }
                 }).showToast();
             }
         }
@@ -446,12 +446,14 @@ botonInput.addEventListener("click", () => {
             style: {
                 background: "linear-gradient(to right, #00b09b, #8a2be2)",
             },
-            gravity: "top", 
+            gravity: "top",
             position: "right",
             offset: {
                 y: 60,
             }
         }).showToast();
+        // Elimino el formulario al ingresar los datos
+        let borrarForm = document.querySelector("#borrarF").textContent = ""
     }
     // Guardar los datos de usuario en el Local Storage
     let storageUsuarioNombre = listaUsuarios.map((p) => {
