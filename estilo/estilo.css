@@ -1,373 +1,516 @@
 /* Generalidades */
 body {
-    background-color: #bc8f8f;
-    margin: 1px;
-    padding: 0;
+  background-color: #bc8f8f;
+  margin: 1px;
+  padding: 0;
 }
 
 main {
-    margin: 10px;
+  margin: 10px;
 }
 
 main h3 {
-    font-size: 2rem;
-    color: #561D25;
+  font-size: 2rem;
+  color: #561D25;
 }
 
 .tituloMain {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* Header */
 header {
-    width: 100%;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    border-bottom: 1px solid white;
-    margin: 0;
-    display: inline-flex;
-    padding: 0;
-    display: flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  display: flex;
 }
 
 header h1 {
-    flex: 1;
-    text-align: center;
-    cursor: pointer;
-    font-family: 'Satisfy', cursive;
-    font-weight: 100;
-    margin: 1px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Satisfy', cursive;
+  font-weight: 100;
+  margin: 1px;
 }
 
 header a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 header svg {
-    text-align: end;
-    cursor: pointer;
-    margin: 10px;
+  text-align: end;
+  cursor: pointer;
+  margin: 10px;
 }
 
 #botonConteo {
-    border-radius: 50%;
-    margin-right: -15px;
-    margin-top: 7px;
-    background-color: #bc8f8f;
-    color: white;
-    border: solid white 1px;
-    height: 22px;
-    width: 22px;
+  border-radius: 50%;
+  margin-right: -15px;
+  margin-top: 7px;
+  background-color: #bc8f8f;
+  color: white;
+  border: solid white 1px;
+  height: 22px;
+  width: 22px;
 }
 
 /* Cartas con juegos */
 .juegos {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .tituloCarta {
-    font-family: 'Pixelify Sans', cursive;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-    color: beige;
-    text-transform: uppercase;
+  font-family: 'Pixelify Sans', cursive;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  color: beige;
+  text-transform: uppercase;
 }
 
 .carta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    width: 20rem;
-    text-align: justify;
-    background-color: #5FB49C;
-    border: 2px dotted #3F826D;
-    margin: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  width: 20rem;
+  text-align: justify;
+  background-color: #5FB49C;
+  border: 2px dotted #3F826D;
+  margin: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 0;
 }
 
 .botonCarta {
-    margin-bottom: 10px;
-    font-family: "Pixelify Sans";
-    font-size: 1rem;
-    color: #561D25;
-    border: #561D25 solid 1px;
-    background-color: #bc8f8f;
+  margin-bottom: 10px;
+  font-family: "Pixelify Sans";
+  font-size: 1rem;
+  color: #561D25;
+  border: #561D25 solid 1px;
+  background-color: #bc8f8f;
 }
 
 .botonCarta:hover {
-    font-size: 1.2rem;
-    color: #561D25;
-    background-color: #c6a6a6;
-    text-transform: uppercase;
-    cursor: pointer;
+  font-size: 1.2rem;
+  color: #561D25;
+  background-color: #c6a6a6;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* Boton de filtrado */
 
 .tituloFiltrado {
-    font-size: 2rem;
-    color: #561D25;
-    margin: 1%;
+  font-size: 2rem;
+  color: #561D25;
+  margin: 1%;
 }
+
 .centrar {
-    align-content: center;
-    justify-content: center;
+  align-content: center;
+  justify-content: center;
 }
 
 aside {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
 .btfiltrado {
-    margin-top: 0;
-    margin-right: 5%;
+  margin-top: 0;
+  margin-right: 5%;
 }
 
 .buttonEdad {
-    height: 40px;
-    background-color: #3F826D;
-    border: white 1px solid;
-    color: white;
+  height: 40px;
+  background-color: #3F826D;
+  border: white 1px solid;
+  color: white;
 }
 
 .buttonEdad:hover {
-    transition: all 1s;
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: #5FB49C;
-    height: 45px;
+  transition: all 1s;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #5FB49C;
+  height: 45px;
 }
 
 
 /* Footer */
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 footer p {
-    text-align: center;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    color: rosybrown;
-    padding-bottom: 3px;
-    padding-top: 1px;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: rosybrown;
+  padding-bottom: 3px;
+  padding-top: 1px;
 }
 
 /* Página de filtrado */
 .elementoFiltrado {
-    display: inline-block;
-    margin-bottom: 2%;
-    margin-left: 1%;
-    display: inline-flex;
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  display: inline-flex;
 }
 
 .elementoFiltrado h4 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .tarjetaFiltrada {
-    border: #561D25 2px solid;
-    background-color: #5FB49C;
-    height: 10rem;
-    width: 10rem;
-    text-align: center;
+  border: #561D25 2px solid;
+  background-color: #5FB49C;
+  height: 10rem;
+  width: 10rem;
+  text-align: center;
 }
 
 .filtradoEdad {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .linea {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .letra {
-    font-family: 'Pixelify Sans', cursive;
-    color: white;
+  font-family: 'Pixelify Sans', cursive;
+  color: white;
 }
 
 /* Elementos creados por js */
 .mostrarCarrito {
-    margin: 2%;
-    font-size: 1.3rem;
+  margin: 2%;
+  font-size: 1.3rem;
 }
 
 .nombresCarrito {
-    margin-left: 1%;
-    font-size: 1.4rem;
-    color: #561D25;
-    margin-bottom: 0;
+  margin-left: 1%;
+  font-size: 1.4rem;
+  color: #561D25;
+  margin-bottom: 0;
 }
 
 /* Flexbox */
- .padreFlex { 
-    display: grid;
-    grid-template-columns: 2;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    /* justify-content: space-evenly;
+.padreFlex {
+  display: grid;
+  grid-template-columns: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-evenly;
     align-items: center; */
 }
+
 .infoCarrito {
-    width: 15vw;
-    font-size: 1.3rem;
-    margin: 0.5%;
-    color: #561D25;
-    border: #561D25 1px dotted;
-    padding: 2%;
+  width: 10vw;
+  font-size: 1.3rem;
+  padding: 0.5%;
+  color: #561D25;
+  border: #561D25 1px dotted;
+  padding: 2%;
+  overflow-wrap: break-word;
 }
 
 .juegos {
-    width: 85%;
+  width: 85%;
 }
 
 /* Formulario */
 .login-box {
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
-    margin-top: 19%;
-    margin-left: 50%;
-    margin-bottom: 0%;
-    width: 400px;
-    padding: 40px;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background: rgba(24, 20, 20, 0.987);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-box-shadow: 0 15px 25px rgba(0,0,0,.6);
-            box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
+  margin-top: 20%;
+  margin-left: 50%;
+  margin-bottom: 0%;
+  width: 350px;
+  padding: 30px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: rgba(24, 20, 20, 0.987);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+/*Versión tablet*/
+@media (min-width: 500px) and (max-width: 900px) {
+  .login-box {
+    margin-top: 30%;
   }
-  
-  .login-box .user-box {
-    position: relative;
+}
+
+/*Versión celu*/
+@media (min-width: 200px) and (max-width: 500px) {
+  .login-box {
+    margin-top: 40%;
   }
-  
-  .login-box .user-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-  }
-  
-  .login-box .user-box label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    -webkit-transition: .5s;
-    transition: .5s;
-  }
-  
-  .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color: #bdb8b8;
-    font-size: 12px;
-  }
-  
-  .login-box form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #ffffff;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    -webkit-transition: .5s;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px
-  }
-  
-  .login-box a:hover {
-    background:#5FB49C;
-    color: #fff;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 5px #5FB49C,
-                0 0 25px #5FB49C,
-                0 0 50px #5FB49C,
-                0 0 100px #5FB49C;
-            box-shadow: 0 0 5px #5FB49C,
-                0 0 25px #5FB49C,
-                0 0 50px #5FB49C,
-                0 0 100px #5FB49C;
-  }
-  
-  .login-box a span {
-    position: absolute;
-    display: block;
-  }
-  
-  @-webkit-keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-  
-    50%,100% {
-      left: 100%;
-    }
-  }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-  
-    50%,100% {
-      left: 100%;
-    }
-  }
-  
-  .login-box a span:nth-child(1) {
-    bottom: 2px;
+}
+
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 5px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #5FB49C;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #5FB49C,
+    0 0 25px #5FB49C,
+    0 0 50px #5FB49C,
+    0 0 100px #5FB49C;
+  box-shadow: 0 0 5px #5FB49C,
+    0 0 25px #5FB49C,
+    0 0 50px #5FB49C,
+    0 0 100px #5FB49C;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+@-webkit-keyframes btn-anim1 {
+  0% {
     left: -100%;
-    width: 100%;
-    height: 2px;
-    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#5FB49C));
-    background: linear-gradient(90deg, transparent, #5FB49C);
-    -webkit-animation: btn-anim1 2s linear infinite;
-            animation: btn-anim1 2s linear infinite;
   }
 
-  .tituloForm {
-    font-size: 17px;
-    color: #5FB49C;
-    text-transform: uppercase;
-    text-align: center;
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
   }
 
-  .botonForm {
-    margin-right: 35%;
-    margin-left: 35%;
+  50%,
+  100% {
+    left: 100%;
   }
+}
+
+.login-box a span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: webkit-gradient(linear, left top, right top, from(transparent), to(#5FB49C));
+  background: linear-gradient(90deg, transparent, #5FB49C);
+  -webkit-animation: btn-anim1 2s linear infinite;
+  animation: btn-anim1 2s linear infinite;
+}
+
+.tituloForm {
+  font-size: 17px;
+  color: #5FB49C;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: default;
+}
+
+.botonForm {
+  margin-right: 35%;
+  margin-left: 35%;
+}
+
+/* Tarjetas que se voltean */
+.myCard {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+}
+
+.frontSide {
+  color: white;
+}
+
+.backSide {
+  color: black;
+}
+
+.frontSide,
+.frontSide::before {
+  background: radial-gradient(ellipse at center, #9176d4 , #523f82);
+}
+
+.backSide,
+.backSide::before {
+  background: radial-gradient(ellipse at center, #ef90a0, #d65167);
+}
+
+.backSide {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  -webkit-animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}

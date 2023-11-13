@@ -1,0 +1,32 @@
+{
+    "producto1": {
+        "nombre": "Monopoly",
+        "precio": 18000,
+        "clasificación": 8
+    },
+    "producto2": {
+        "nombre": "4 en linea",
+        "precio": 2000,
+        "clasificación": 5
+    },
+    "producto3": {
+        "nombre": "¿Ke sos?",
+        "precio": 11000,
+        "clasificación": 5
+    },
+    "producto4": {
+        "nombre": "Say My Name",
+        "precio": 5000,
+        "clasificación": 16
+    },
+    "producto5": {
+        "nombre": "Uno",
+        "precio": 3000,
+        "clasificación": 8
+    },
+    "producto6": {
+        "nombre": "Ajedrez",
+        "precio": 10000,
+        "clasificación": 8
+    }
+}

@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo de la pág -->
     <title>Mesaza</title>
+    <!-- Icono de la página -->
+    <link rel="shortcut icon" href="img/m.png" type="image/x-icon">
     <!-- Estilos -->
     <link rel="stylesheet" href="estilo/estilo.css">
     <!-- Letras -->
@@ -14,9 +17,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-<!-- Toastify -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    </head>
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
 
 <body>
     <header>
@@ -29,6 +32,7 @@
         </svg>
     </header>
     <main>
+        <!-- Formulario -->
         <div class="login-box">
             <form id="form">
                 <h5 class="tituloForm">Registrese para obtener novedades y descuentos</h5>
@@ -46,89 +50,171 @@
                 </a>
             </form>
         </div>
+        <div>
+            <ul id="listaJuegos"></ul>
+        </div>
         <!-- Mostrar los datos obtenidos en la pantalla al hacer la compra del carrito -->
-        <h3 class="tituloMain">Nuestros juegos disponibles:</h3>
+        <h3 class="tituloMain">Información sobre nuestros juegos:</h3>
         <div class="padreFlex">
             <div class="juegos">
+                <!-- Carta del juego Monopoly -->
                 <div class="carta">
-                    <h3 class="tituloCarta">Monopoly</h3>
-                    <p>Un clásico juego de mesa que combina estrategia, habilidades financieras y suerte. Este juego es
-                        una excelente opción para
-                        reuniones familiares o noches de juegos con amigos. Los jugadores compiten para comprar,
-                        intercambiar
-                        y desarrollar propiedades, mientras intentan acumular riqueza y monopolizar el mercado
-                        inmobiliario.
-                        A medida que avanzas por el tablero, puedes enfrentarte a eventos
-                        inesperados, como tarjetas de la suerte y del destino, que pueden cambiar drásticamente el curso
-                        del
-                        juego.</p>
+                    <h3 class="tituloCarta">Monopoly</h3> <br>
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <p>Un clásico juego de mesa que combina estrategia, habilidades financieras y suerte.
+                                    Los jugadores compiten para
+                                    comprar,
+                                    intercambiar
+                                    y desarrollar propiedades, mientras intentan acumular riqueza y monopolizar el
+                                    mercado
+                                    inmobiliario.</p>
+                            </div>
+                            <div class="backSide">
+                                <p>Este juego es para personas que tengan 8 o más años.</p>
+                                <p>El mínimo de jugadores es de 2 personas, y el máximo de jugadores es de 6.</p>
+                                <p>El precio es de $18.000</p>
+                            </div>
+                        </div>
+                    </div> <br>
                     <button class="botonCarta" id="monopoly">¡Lo quiero!</button>
                     <button class="botonCarta" id="monopolyQuitar">Me arrepentí</button>
                 </div>
+                <!-- Carta del juego Say My Name -->
                 <div class="carta">
-                    <h3 class="tituloCarta">Say My Name</h3>
-                    <p>Describí, actuá, imporvisá y adiviná. Es una mezcla de juegos que jugabas de chico creando un
-                        juego
-                        en donde ganan los más rápidos en adivinar. Tiene una dinámica de juego para grupo y un sistema
-                        de
-                        rondas con formatos distintos que permiten mantener el juego entretenido y lo hacen muy dinámico
-                        y
-                        permiten situaciones graciosas. Este es un multijuego para jugar de a 4 a 12 jugadores.</p>
+                    <h3 class="tituloCarta">Say My Name</h3> <br>
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <p>Describí, actuá, imporvisá y adiviná. Es una mezcla de juegos que jugabas de chico
+                                    creando un
+                                    juego
+                                    en donde ganan los más rápidos en adivinar. Tiene una dinámica de juego en grupos
+                                    que permiten mantener el juego entretenido, muy dinámico
+                                    y
+                                    permiten situaciones graciosas.</p>
+                            </div>
+                            <div class="backSide">
+                                <p>Este juego es para personas que tengan 16 o más años.</p>
+                                <p>El mínimo de jugadores es de 4 personas, y el máximo de jugadores es de 12.</p>
+                                <p>El precio es de $5.000</p>
+                            </div>
+                        </div>
+                    </div> <br>
                     <button class="botonCarta" id="sayMyName">¡Lo quiero!</button>
                     <button class="botonCarta" id="sayMyNameQuitar">Me arrepentí</button>
                 </div>
+                <!-- Carta del juego Uno -->
                 <div class="carta">
-                    <h3 class="tituloCarta">Uno</h3>
-                    <p>Es un popular juego de cartas que combina estrategia, habilidad y suerte. El objetivo principal
-                        del
-                        juego es ser el primero en quedarse sin cartas en la mano. Uno es un juego divertido y rápido
-                        que
-                        requiere estrategia para elegir cuándo jugar ciertas cartas y cómo afectar el juego para tus
-                        oponentes. La sorpresa y la interacción entre los jugadores son elementos clave que hacen que
-                        Uno
-                        sea un juego popular en reuniones sociales y fiestas.</p>
+                    <h3 class="tituloCarta">Uno</h3><br>
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <p>Es un popular juego de cartas que combina estrategia, habilidad y suerte, es un juego
+                                    divertido
+                                    y
+                                    rápido
+                                    que
+                                    requiere estrategia para elegir cuándo jugar ciertas cartas y cómo afectar el juego
+                                    para
+                                    tus
+                                    oponentes. La sorpresa y la interacción entre los jugadores son elementos clave en
+                                    este juego.</p>
+                            </div>
+                            <div class="backSide">
+                                <p>Este juego es para personas que tengan 8 o más años.</p>
+                                <p>El mínimo de jugadores es de 2 personas, y el máximo de jugadores es de 10.</p>
+                                <p>El precio es de $3.000</p>
+                            </div>
+                        </div>
+                    </div> <br>
                     <button class="botonCarta" id="uno">¡Lo quiero!</button>
                     <button class="botonCarta" id="unoQuitar">Me arrepentí</button>
                 </div>
+                <!-- Carta del juego 4 en linea -->
                 <div class="carta">
-                    <h3 class="tituloCarta">4 en linea</h3>
-                    <p>Es un emocionante juego de estrategia para 2 jugadores que requiere habilidad, planificación y
-                        rapidez mental. El objetivo del juego es ser el primero en conectar cuatro de tus fichas del
-                        mismo
-                        color en línea. El desafío radica en
-                        prevenir que tu oponente forme una línea de cuatro mientras intentas crear la tuya propia. La
-                        estrategia se vuelve crucial a medida que avanzas en el juego.</p>
+                    <h3 class="tituloCarta">4 en linea</h3> <br>
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <p>Es un emocionante juego de estrategia que requiere habilidad,
+                                    planificación y
+                                    rapidez mental. El objetivo del juego es ser el primero en conectar cuatro de tus
+                                    fichas
+                                    del
+                                    mismo
+                                    color en línea. La
+                                    estrategia se vuelve crucial a medida que avanzas en el juego.</p>
+                            </div>
+                            <div class="backSide">
+                                <p>Este juego es para personas que tengan 5 o más años.</p>
+                                <p>Solo se puede jugar entre 2 personas.</p>
+                                <p>El precio es de $2.000</p>
+                            </div>
+                        </div>
+                    </div> <br>
                     <button class="botonCarta" id="4EnLinea">¡Lo quiero!</button>
                     <button class="botonCarta" id="4EnLineaQuitar">Me arrepentí</button>
                 </div>
+                <!-- Carta del juego Ke Sos -->
                 <div class="carta">
-                    <h3 class="tituloCarta">¿Ke sos?</h3>
-                    <p>Es tu turno, elige una carta y póntela en la vincha sin verla, ahí comienza el misterio de este
-                        maravilloso juego. Ahora pregunta y sumando los datos acumulados llegarás a saber que sos.
-                        Increíble
-                        juego de mesa donde pondrás a prueba tu imaginación en tus preguntas para que puedas a divinar
-                        el
-                        personaje que tenes disponible antes que termine el tiempo.</p>
+                    <h3 class="tituloCarta">¿Ke sos?</h3> <br>
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <p>Es tu turno, elige una carta y póntela en la vincha sin verla, ahí comienza el
+                                    misterio
+                                    de este
+                                    maravilloso juego. Ahora pregunta y sumando los datos acumulados llegarás a saber
+                                    que
+                                    sos.
+                                    Pondrás a prueba tu imaginación para adivinar el
+                                    personaje que tenes disponible antes que termine el tiempo.</p>
+                            </div>
+                            <div class="backSide">
+                                <p>Este juego es para personas que tengan 5 o más años.</p>
+                                <p>El mínimo de jugadores es de 2 personas, y el máximo de jugadores es de 6.</p>
+                                <p>El precio es de $11.000</p>
+                            </div>
+                        </div>
+                    </div> <br>
                     <button class="botonCarta" id="keSos">¡Lo quiero!</button>
                     <button class="botonCarta" id="keSosQuitar">Me arrepentí</button>
                 </div>
+                <!-- Carta del juego Ajedrez -->
                 <div class="carta">
-                    <h3 class="tituloCarta">Ajedrez</h3>
-                    <p>Es un juego de estrategia y habilidad milenario. Se juega comúnmente entre dos jugadores, cada
-                        uno de
-                        los cuales controla un conjunto de 16 piezas: un rey, una reina, dos torres, dos caballos, dos
-                        alfiles y ocho peones, cada pieza tiene movimientos específicos y reglas particulares que los
-                        jugadores deben seguir. El juego combina elementos de estrategia, táctica y planificación a
-                        largo
-                        plazo.</p>
+                    <h3 class="tituloCarta">Ajedrez</h3> <br>
+                    <div class="myCard">
+                        <div class="innerCard">
+                            <div class="frontSide">
+                                <p>Es un juego de estrategia y habilidad milenario. Cada
+                                    jugador controla un conjunto de 16 piezas y cada una tiene movimientos específicos y
+                                    reglas
+                                    particulares
+                                    que los
+                                    jugadores deben seguir. El juego combina elementos de estrategia, táctica y
+                                    planificación a
+                                    largo
+                                    plazo.</p>
+                            </div>
+                            <div class="backSide">
+                                <p>Este juego es para personas que tengan 8 o más años.</p>
+                                <p>Solo se puede jugar entre 2 personas.</p>
+                                <p>El precio es de $10.000</p>
+                            </div>
+                        </div>
+                    </div> <br>
                     <button class="botonCarta" id="ajedrez">¡Lo quiero!</button>
                     <button class="botonCarta" id="ajedrezQuitar">Me arrepentí</button>
                 </div>
+                <!-- Recuadro donde aparece la info al hacer click en el carrito -->
             </div>
             <aside class="infoCarrito">
             </aside>
         </div>
     </main>
+    <!-- Botones de filtro por edades -->
     <div class="centrar">
         <h4 class="tituloFiltrado">Seleccione la edad de la persona a quien le comprará el juego:</h4>
         <aside>
@@ -141,7 +227,7 @@
     <footer>
         <p>Página ficticia, creada con fines educativos</p>
     </footer>
-    <script src="./js/inicio.js"></script>
+    <script src="./inicio.js"></script>
     <!-- Toastify -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
