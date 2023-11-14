@@ -231,17 +231,21 @@ footer p {
 
 .modalContent {
   margin: auto;
-  padding: 4%;
+  padding: 1%;
   background-color: #5FB49C;
   border: #523f82 5px solid;
   border-radius: 10%;
   color: #523f82;
-  width: fit-content;
+  font-weight: 600;
+  width: 20%;
   height: fit-content;
 }
 
+.botonesCarrito {
+  display: inline-flex;
+}
+
 .close {
-  float: right;
   font-size: 26px;
   font-weight: bold;
   text-decoration: none;
@@ -254,10 +258,11 @@ footer p {
   height: 3em;
   line-height: 2em;
   text-align: center;
-  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 300%;
   border-radius: 30px;
   z-index: 1;
+  margin: 15px;
 }
 
 .close:hover {
@@ -283,7 +288,7 @@ footer p {
   right: -5px;
   bottom: -5px;
   z-index: -1;
-  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
   background-size: 400%;
   border-radius: 35px;
   transition: 1s;
@@ -294,7 +299,7 @@ footer p {
 }
 
 .close:active {
-  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
 }
 
 .infoCarrito {
