@@ -34,23 +34,24 @@
     <main>
         <!-- Formulario -->
         <div id="borrarF">
-        <div class="login-box">
-            <form id="form">
-                <h5 class="tituloForm">Registrese para obtener novedades y descuentos</h5>
-                <div class="user-box">
-                    <input type="text" name="" required="" id="name">
-                    <label>Nombre</label>
-                </div>
-                <div class="user-box">
-                    <input type="email" name="" required="" id="email">
-                    <label>Email</label>
-                </div>
-                <a href="#" class="botonForm" id="botonForm">
-                    SEND
-                    <span></span>
-                </a>
-            </form>
-        </div></div>
+            <div class="login-box">
+                <form id="form">
+                    <h5 class="tituloForm">Registrese para obtener novedades y descuentos</h5>
+                    <div class="user-box">
+                        <input type="text" name="" required="" id="name">
+                        <label>Nombre</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="email" name="" required="" id="email">
+                        <label>Email</label>
+                    </div>
+                    <a href="#" class="botonForm" id="botonForm">
+                        SEND
+                        <span></span>
+                    </a>
+                </form>
+            </div>
+        </div>
         <div>
             <ul id="listaJuegos"></ul>
         </div>
@@ -211,8 +212,14 @@
                 </div>
                 <!-- Recuadro donde aparece la info al hacer click en el carrito -->
             </div>
-            <aside class="infoCarrito">
-            </aside>
+            <div id="modal">
+                <div class="modalContent">
+                    <button class="close" id="close"> CERRAR
+                    </button> <br>
+                    <aside class="infoCarrito">
+                    </aside>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Botones de filtro por edades -->

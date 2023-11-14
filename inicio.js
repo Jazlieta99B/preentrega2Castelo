@@ -452,6 +452,7 @@ botonInput.addEventListener("click", () => {
                 y: 60,
             }
         }).showToast();
+        
         // Elimino el formulario al ingresar los datos
         let borrarForm = document.querySelector("#borrarF").textContent = ""
     }
@@ -461,3 +462,25 @@ botonInput.addEventListener("click", () => {
     })
     localStorage.setItem("Usuario", storageUsuarioNombre)
 })
+
+// Creo un modal para el carrito
+if (document.getElementById("botonCarrito")){
+    let modal = document.getElementById("modal")
+    let button = document.getElementById("botonCarrito")
+    let span = document.getElementById("close")
+    let body = document.getElementById("body")
+
+    button.onclick = function(){
+        modal.style.display = "block"
+        body.style.position = "static"
+        body.style.height = "100%"
+        body.style.overflow = "hidden"
+    }
+
+    span.onclick = function(){
+        modal.style.display = "none"
+        body.style.position = "inherit"
+        body.style.height = "auto"
+        body.style.overflow = "visible"
+    }
+}
