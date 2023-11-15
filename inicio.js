@@ -324,7 +324,7 @@ async function crearJ() {
         contenedor.addEventListener("click", () => {
             let primerTexto = document.createElement("div")
             primerTexto.innerHTML =
-                `<h3 class="nombresCarrito">Flitrado de juegos entre 5 a 7 años:</h3> <br>
+                `<h3 class="nombresCarrito">Flitrado de juegos entre 5 a 7 años:<button id="closeOp1"> X </button> </h3><br>
         <div class="elementoFiltrado">
         <div class="tarjetaFiltrada">                
         <h4>Juego: <span class="letra">4 en linea</span></h4>
@@ -336,6 +336,11 @@ async function crearJ() {
         <p><span class="linea">Clasificación:</span> 5 años</p>
         <p><span class="linea">Precio:</span> $11000</p></div></div>`
             document.body.appendChild(primerTexto)
+
+            let eliminarFiltro1 = document.querySelector("#closeOp1")
+            eliminarFiltro1.addEventListener("click", () => {
+                primerTexto.textContent = " "
+            })
         })
 
         let opcion2 = document.getElementById("#opcion2")
@@ -343,7 +348,7 @@ async function crearJ() {
         contenedorB.addEventListener("click", () => {
             let segundoTexto = document.createElement("div")
             segundoTexto.innerHTML =
-                `<h3 class="nombresCarrito">Flitrado de juegos entre 8 a 15 años:</h3> <br>
+                `<h3 class="nombresCarrito">Flitrado de juegos entre 8 a 15 años:<button id="closeOp2"> X </button> </h3> <br>
         <div class="elementoFiltrado">
         <div class="tarjetaFiltrada">                
         <h4>Juego: <span class="letra">4 en linea</span></h4>
@@ -370,6 +375,11 @@ async function crearJ() {
         <p><span class="linea">Clasificación:</span> 8 años</p>
         <p><span class="linea">Precio:</span> $10000</p></div></div>`
             document.body.appendChild(segundoTexto)
+
+            let eliminarFiltro2 = document.querySelector("#closeOp2")
+            eliminarFiltro2.addEventListener("click", () => {
+                segundoTexto.textContent = " "
+            })
         })
 
         let opcion3 = document.getElementById("#opcion3")
@@ -377,7 +387,7 @@ async function crearJ() {
         contenedorC.addEventListener("click", () => {
             let tercerTexto = document.createElement("div")
             tercerTexto.innerHTML =
-                `<h3 class="nombresCarrito">Flitrado de juegos para 16 o más años:</h3> <br>
+                `<h3 class="nombresCarrito">Flitrado de juegos para 16 o más años:<button id="closeOp3"> X </button> </h3> <br>
         <div class="elementoFiltrado">
         <div class="tarjetaFiltrada">              
         <h4>Juego: <span class="letra">4 en linea</span></h4>
@@ -409,6 +419,11 @@ async function crearJ() {
         <p><span class="linea">Clasificación:</span> 16 años</p>
         <p><span class="linea">Precio:</span> $5000</p></div></div>`
             document.body.appendChild(tercerTexto)
+            
+            let eliminarFiltro3 = document.querySelector("#closeOp3")
+            eliminarFiltro3.addEventListener("click", () => {
+                tercerTexto.textContent = " "
+            })
         })
     }
     catch (error) {

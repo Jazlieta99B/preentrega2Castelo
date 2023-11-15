@@ -75,8 +75,8 @@ header svg {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 0;
-  font-size: 1.5rem;
-  color: beige;
+  font-size: 1.8rem;
+  color: #523f82;
   text-transform: uppercase;
 }
 
@@ -152,30 +152,10 @@ aside {
   height: 45px;
 }
 
-
-/* Footer */
-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-
-footer p {
-  text-align: center;
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  color: rosybrown;
-  padding-bottom: 3px;
-  padding-top: 1px;
-}
-
-/* Página de filtrado */
 .elementoFiltrado {
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: 2%;
   margin-left: 1%;
-  display: inline-flex;
 }
 
 .elementoFiltrado h4 {
@@ -203,9 +183,26 @@ footer p {
   color: white;
 }
 
+#closeOp1,
+#closeOp2,
+#closeOp3 {
+  border: #561D25 1px solid;
+  background-color: #561D25;
+  color: white;
+  font-size: 1rem;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+#closeOp1:hover,
+#closeOp2:hover,
+#closeOp3:hover {
+  font-size: 1.1rem;
+  /* transition: 1s; */
+}
+
 /* Elementos creados por js */
 .mostrarCarrito {
-  /* margin: 2%; */
   font-size: 1.3rem;
 }
 
@@ -511,12 +508,19 @@ footer p {
   box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
 }
 
+.frontSide p,
+.backSide p {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
 .frontSide {
   color: white;
 }
 
 .backSide {
   color: black;
+  font-weight: 700;
 }
 
 .frontSide,
@@ -579,4 +583,21 @@ footer p {
   100% {
     opacity: 0.3;
   }
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: rosybrown;
+  padding-bottom: 3px;
+  padding-top: 1px;
 }
